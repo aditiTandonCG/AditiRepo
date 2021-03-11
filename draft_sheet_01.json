@@ -1,0 +1,18 @@
+{
+  "aggregateFunction": "avg",
+  "components": [],
+  "contentType": "process-overview",
+  "format": "FULLSCREEN",
+  "id": "2d0213a1-bbc1-4c18-b769-4862e96caf14",
+  "name": "#{overview}",
+  "position": {
+    "height": 804,
+    "left": 0,
+    "top": 0,
+    "width": 1200
+  },
+  "sheetFilter": {
+    "text": ""
+  },
+  "timeUnits": "days"
+}
