@@ -1,0 +1,131 @@
+{
+  "document": {
+    "KPILibrary": [],
+    "allowBpmnExport": true,
+    "allowRawDataExport": true,
+    "colorMappings": [
+      {
+        "id": "04c35dff-13fe-47a0-964d-38568e5ce207",
+        "name": "New Color Mapping",
+        "thresholds": [
+          {
+            "color": "#ffffff",
+            "compare": ">",
+            "formula": "5"
+          }
+        ],
+        "type": "series"
+      },
+      {
+        "id": "93826cad-dc63-4a84-bde3-cd5b9d7540de",
+        "name": "New Color Mapping",
+        "thresholds": [
+          {
+            "color": "#FF797B",
+            "compare": ">",
+            "formula": "5"
+          }
+        ],
+        "type": "series"
+      },
+      {
+        "id": "73e30d04-f379-472b-a1c3-f1338c6c9709",
+        "name": "Paid In Time",
+        "thresholds": [
+          {
+            "color": "#FF8884",
+            "compare": "<",
+            "formula": "0.3"
+          },
+          {
+            "color": "#a1cd4e",
+            "compare": ">",
+            "formula": "0.55"
+          }
+        ],
+        "type": "series"
+      },
+      {
+        "id": "a02978b2-05f6-4fe4-93f9-5fa4afbffa73",
+        "name": "ReworkRate",
+        "thresholds": [
+          {
+            "color": "#a1cd4e",
+            "compare": "<",
+            "formula": "0.24"
+          },
+          {
+            "color": "#FF8884",
+            "compare": ">",
+            "formula": "0.4"
+          }
+        ],
+        "type": "series"
+      },
+      {
+        "id": "f4548b8c-63f1-441e-8ace-04e6aba9eacb",
+        "name": "Throughput Days",
+        "thresholds": [
+          {
+            "color": "#ff8884",
+            "compare": ">",
+            "formula": "52"
+          },
+          {
+            "color": "#EEC870",
+            "compare": "<=",
+            "formula": "52"
+          },
+          {
+            "color": "#a1cd4e",
+            "compare": "<=",
+            "formula": "26"
+          }
+        ],
+        "type": "series"
+      },
+      {
+        "id": "ffc2f931-86b0-4aed-9e7d-71f124434ba9",
+        "name": "New Color Mapping",
+        "thresholds": [
+          {
+            "color": "#a1cd4e",
+            "compare": ">=",
+            "formula": "0.5"
+          },
+          {
+            "color": "#FF8884",
+            "compare": "<",
+            "formula": "0.34"
+          }
+        ],
+        "type": "series"
+      }
+    ],
+    "editMode": true,
+    "id": "100471884",
+    "kpiViews": [],
+    "loadScript": "CLEAR SELECTIONS;",
+    "multiselectMode": false,
+    "palettes": [],
+    "rawDataExportLimit": 20000,
+    "rootCauseColumns": [
+      "\"BSEG\".\"BUKRS\"",
+      "\"LFA1\".\"NAME1\"",
+      "\"LFA1\".\"LAND1\"",
+      "\"LFA1\".\"MCOD3\"",
+      "\"BSEG\".\"BELNR\"",
+      "\"BSEG\".\"BUZEI\"",
+      "\"BSEG\".\"GSBER\""
+    ],
+    "statelessLoadScript": "",
+    "theme": "celonis_legacy"
+  },
+  "id": "c4fc2ee0-4b74-4823-a00e-121e05d45658",
+  "lastChangeDate": 1547817600896,
+  "lastChangeUserId": "a8a7af2e-2dfb-4858-b7c9-377abce7e4ce",
+  "lastChangeUserName": "demo-user@celonis.com(Partner Management)",
+  "lockedUntilDate": 0,
+  "sourceId": null,
+  "title": null
+}
