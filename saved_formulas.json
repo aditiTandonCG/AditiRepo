@@ -1,0 +1,50 @@
+[
+  {
+    "description": null,
+    "id": "56da3935-822f-4a91-8012-2b6a792720e9",
+    "name": "Touchless Order Rate",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "AVG(\nCASE\n    WHEN PU_COUNT_DISTINCT(\"BSEG\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\"='A')=0 AND PU_MAX(\"BSEG\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\") IN ('B','C','S') THEN 1.0\n    ELSE 0.0\nEND\n)"
+  },
+  {
+    "description": "Relative amount of invoices with overdue notices",
+    "id": "35d8895a-d26d-42bd-bc83-e8bcef0e5493",
+    "name": "Overdue Notice Rate",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "AVG(CASE WHEN process equals 'Send Overdue Notice' THEN 1.0 \n    ELSE 0.0 END)"
+  },
+  {
+    "description": "difference between payment date and due date. Is positive when payment is cleared before it is due. You can specify a border variable which declares when payment is 'too late'. Returns a ratio over all paid invoices.",
+    "id": "4edf1921-da7d-42ca-9d40-7cd779e03699",
+    "name": "Paid In Time Ratio",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "AVG(\n    CASE \n        WHEN DATEDIFF(dd, <%= Payment_Date %>, <%= Due_Date %>) >= - <%=buffer%> \n            THEN 1.0\n        ELSE 0.0 \n    END\n)"
+  },
+  {
+    "description": null,
+    "id": "16bf7233-4d90-4a30-a5b5-b6fbb78a4aff",
+    "name": "Touchless Orders",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "SUM(\nCASE\n    WHEN PU_COUNT_DISTINCT(\"BSEG\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\"='A')=0 AND PU_MAX(\"BSEG\",\"_CEL_AR_ACTIVITIES\".\"USER_TYPE\") IN ('B','C','S') THEN 1.0\n    ELSE 0.0\nEND\n)"
+  },
+  {
+    "description": "difference between payment date and due date. Is negative when payment date is later than due date. You can specify a border variable which declares when payment is 'too late'. Returns a ratio over all paid invoices.",
+    "id": "4a697c4f-818f-4033-9478-74223dbb7e86",
+    "name": "Paid Too Late Ratio",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "AVG(\n    CASE \n        WHEN DATEDIFF(dd, <%= Payment_Date %>, <%= Due_Date %>) < - <%=buffer%>\n            THEN 1.0\n        ELSE 0.0 \n    END\n)"
+  },
+  {
+    "description": null,
+    "id": "41ad2401-898e-4475-aee7-da44e6b332b8",
+    "name": "DSO",
+    "parameterCount": 0,
+    "parameters": [],
+    "template": "CALC_THROUGHPUT(ALL_OCCURRENCE['Send Invoice'] TO ALL_OCCURRENCE['Clear Invoice'], REMAP_TIMESTAMPS(\"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", DAYS))"
+  }
+]
