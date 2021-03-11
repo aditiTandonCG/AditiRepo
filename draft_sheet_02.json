@@ -1,0 +1,1394 @@
+{
+  "components": [
+    {
+      "axis0": [
+        {
+          "flex": 1,
+          "name": "<%= ButtonDrilldown1== '\"LFA1\".\"NAME1\"'  ? 'Customer': ButtonDrilldown1== '\"BSEG\".\"BUKRS\" || \\' - \\' || \"BSEG\".\"BUKRS_TEXT\"'  ? '#{\"BSEG\".\"BUKRS\"}': ButtonDrilldown1== '\"BKPF\".\"BLART\"'  ? '#{\"BKPF\".\"BLART\"}': ''%>",
+          "secondaryAxis": false,
+          "seriesColor": "",
+          "seriesColorMapping": "",
+          "text": "<%=ButtonDrilldown1%>",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "<%= ButtonDrilldown1== '\"LFA1\".\"NAME1\"'  ? 'Customer': ButtonDrilldown1== '\"BSEG\".\"BUKRS\" || \\' - \\' || \"BSEG\".\"BUKRS_TEXT\"'  ? 'Company Code': ButtonDrilldown1== '\"BKPF\".\"BLART\"  ? 'Document Type': ''%>",
+          "type": "dimension",
+          "units": " ",
+          "width": 136
+        }
+      ],
+      "axis0Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {},
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "gridlineStyle": {},
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "axis1": [],
+      "axis1Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {},
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {},
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "axis2": [
+        {
+          "dataLabelStyle": {
+            "fontSize": 9
+          },
+          "dataLabelsPosition": "top",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "flex": 0.75,
+          "ignoreSeriesPalettes": true,
+          "name": "# #{invoices}",
+          "ratioFormula": {},
+          "secondaryAxis": false,
+          "seriesColor": "#dddddd",
+          "seriesColorMapping": "",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "sorting": "DESC",
+          "sortingIndex": 0,
+          "text": "COUNT_TABLE(\"BSEG\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "# Invoices",
+          "units": " ",
+          "valueFormat": ",f",
+          "width": 102
+        },
+        {
+          "dataLabelStyle": {},
+          "dataLabelsPosition": "custom",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "flex": 0.9706,
+          "ignoreSeriesPalettes": true,
+          "name": "Total throughput time in days",
+          "notIncluded": true,
+          "ratioFormula": {},
+          "secondaryAxis": false,
+          "seriesColor": "",
+          "seriesColorMapping": "f4548b8c-63f1-441e-8ace-04e6aba9eacb",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "styles": {
+            "left": "0px",
+            "position": "absolute",
+            "right": "4px",
+            "top": "80px"
+          },
+          "text": "AVG(CALC_THROUGHPUT(ALL_OCCURRENCE['Process Start'] TO ALL_OCCURRENCE['Process End'], REMAP_TIMESTAMPS(\"_CEL_AP_ACTIVITIES\".\"EVENTTIME\", DAYS)))",
+          "textColor": "#ffffff",
+          "textColorMapping": "",
+          "throughputTime": true,
+          "translatedName": "Total throughput time in days",
+          "type": "FLOAT",
+          "units": " Days",
+          "valueFormat": "",
+          "width": 132
+        },
+        {
+          "dataLabelStyle": {
+            "fontSize": 9
+          },
+          "dataLabelsPosition": "top",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "flex": 0.9853,
+          "ignoreSeriesPalettes": true,
+          "name": "#{invoiceValue}",
+          "secondaryAxis": false,
+          "seriesColor": "#14A9D5",
+          "seriesColorMapping": "",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "text": "SUM(\"BSEG\".\"WRBTR\")",
+          "textColor": "#FFFFFF",
+          "textColorMapping": "",
+          "translatedName": "Invoice Value",
+          "units": " \u20ac",
+          "valueFormat": ",f",
+          "width": 134
+        }
+      ],
+      "axis2Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {},
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {},
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "chartType": "table",
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#777777",
+        "lineOpacity": 0.29,
+        "lineWidth": 1,
+        "opacityInDec": 29
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 23,
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "LEFT",
+      "id": "30e15b4e-9d83-4aba-8aec-a75e88868955",
+      "legendPosition": "bc",
+      "legendShow": true,
+      "limitMode": "NO_LIMIT",
+      "maximized": false,
+      "selection": [],
+      "seriesColor": "",
+      "showHeader": true,
+      "showOthers": false,
+      "showTitle": true,
+      "technicalNames": false,
+      "textColor": "",
+      "textStyle": {
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "cssClass": "",
+          "name": "Default Size",
+          "value": 14
+        },
+        "fontColor": "",
+        "fontSize": 14
+      },
+      "title": "Invoices by <%= ButtonDrilldown1== '\"LFA1\".\"NAME1\"'  ? '#{customer}': ButtonDrilldown1== '\"BSEG\".\"BUKRS\" || \\' - \\' || \"BSEG\".\"BUKRS_TEXT\"'  ? '#{\"BSEG\".\"BUKRS\"}': ButtonDrilldown1== '\"BKPF\".\"BLART\" || \\' - \\' || \"BKPF\".\"BLART_TEXT\"'  ? '#{\"BKPF\".\"BLART\"}': ''%>",
+      "titleStyle": {
+        "alignment": "left",
+        "backgroundColor": "#FFFFFF",
+        "bold": false,
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "medium 14px",
+          "value": 14
+        },
+        "fontColor": "#000000",
+        "fontSize": 14
+      },
+      "toolBorder": false,
+      "tooltips": true,
+      "type": "pql-table",
+      "width": 27,
+      "x": 72,
+      "y": 26,
+      "zIndex": 1
+    },
+    {
+      "activityConfigurations": [
+        {
+          "color": "#14a9d5",
+          "fixedColor": "",
+          "hidden": false,
+          "name": "Change Baseline Date"
+        },
+        {
+          "color": "#14a9d5",
+          "fixedColor": "",
+          "hidden": false,
+          "name": "Change Payment Term"
+        },
+        {
+          "color": "#14a9d5",
+          "fixedColor": "",
+          "hidden": false,
+          "name": "Due Date passed"
+        },
+        {
+          "color": "#14a9d5",
+          "fixedColor": "",
+          "hidden": false,
+          "name": "Set Dunning Block"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Cancel Invoice"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Create Invoice"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Invoice cleared"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Record Goods Issue"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Change Price"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Send Invoice"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Send Overdue Notice"
+        },
+        {
+          "color": "#14a9d5",
+          "hidden": false,
+          "name": "Set Payment Block"
+        }
+      ],
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 0
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#777777",
+        "lineOpacity": 0.29,
+        "lineWidth": 1,
+        "opacityInDec": 29
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "fullDotLayout": true,
+      "groupsConfigurations": [],
+      "hasBackground": true,
+      "height": 44,
+      "hiddenActivities": {},
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "RIGHT",
+      "id": "e69ad2d5-0960-4e3f-8300-e29b6b0265bb",
+      "kpiView": {
+        "connectionKpi": {
+          "colorEnd": "#1190b6",
+          "colorStart": "#40c6ed",
+          "id": "FREQUENCY",
+          "name": "frequency",
+          "text": "",
+          "units": "",
+          "valueFormat": ",f"
+        },
+        "connectionKpis": [
+          {
+            "colorEnd": "#1190b6",
+            "colorStart": "#40c6ed",
+            "id": "FREQUENCY",
+            "name": "frequency",
+            "text": "",
+            "units": "",
+            "valueFormat": ",f"
+          }
+        ],
+        "icon": "icons/icon-frequency.svg",
+        "id": "FREQUENCY",
+        "inlineKpi": "caseCount",
+        "title": "frequency"
+      },
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "throughputUnits": "days",
+      "title": "",
+      "titleStyle": {
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "cssClass": "font-size-md",
+          "name": "Medium",
+          "value": 17
+        },
+        "fontColor": "#000000",
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "variant_explorer",
+      "width": 55,
+      "x": 1,
+      "y": 5,
+      "zIndex": 13
+    },
+    {
+      "allowDataLink": false,
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": false,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formula": {
+        "name": "Invoices",
+        "text": "COUNT_TABLE(\"BSEG\")",
+        "units": "",
+        "valueFormat": ",f"
+      },
+      "hasBackground": true,
+      "hasHoverbuttons": false,
+      "height": 3,
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "RIGHT",
+      "id": "e199dfd2-6c0c-421d-bfb1-644b3c615f52",
+      "kpiValue": 238074,
+      "maximized": false,
+      "minHeight": 2,
+      "minWidth": 2,
+      "segmentsInput": [
+        {
+          "color": "#3182bd",
+          "formula": {
+            "text": "0"
+          }
+        },
+        {
+          "color": "#76d1bb",
+          "formula": {
+            "text": "500"
+          }
+        },
+        {
+          "color": "#ffd062",
+          "formula": {
+            "text": "1000"
+          }
+        },
+        {
+          "color": "#ff8884",
+          "formula": {
+            "text": "1500"
+          }
+        }
+      ],
+      "segmentsResult": [
+        {
+          "color": "#3182bd",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#3182bd",
+            "formula": {
+              "text": "0"
+            }
+          },
+          "value": 0
+        },
+        {
+          "color": "#76d1bb",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#76d1bb",
+            "formula": {
+              "text": "500"
+            }
+          },
+          "value": 500
+        },
+        {
+          "color": "#ffd062",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#ffd062",
+            "formula": {
+              "text": "1000"
+            }
+          },
+          "value": 1000
+        },
+        {
+          "color": "#ff8884",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#ff8884",
+            "formula": {
+              "text": "1500"
+            }
+          },
+          "value": 1500
+        }
+      ],
+      "selection": [],
+      "settings": {
+        "fixedFontSize": 24,
+        "fixedTextSize": true,
+        "maxValue": 1500,
+        "minValue": 0,
+        "singleColor": "#14A9D5",
+        "singleColorEnabled": true,
+        "subtitle": "# Invoices:",
+        "subtitlePosition": "left",
+        "viewType": "number"
+      },
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "alignment": "center",
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontColor": "",
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "single-kpi",
+      "vertical": false,
+      "width": 15,
+      "x": 38,
+      "y": 1,
+      "zIndex": 13
+    },
+    {
+      "allowDataLink": false,
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": false,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formula": {
+        "text": "SUM(\"BSEG\".\"WRBTR\")",
+        "units": "\u20ac",
+        "valueFormat": ".3s"
+      },
+      "hasBackground": true,
+      "hasHoverbuttons": false,
+      "height": 3,
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "RIGHT",
+      "id": "9acb3526-aa70-4b32-b3c4-8b1cdf43ee28",
+      "kpiValue": 1131091298.3723974,
+      "maximized": false,
+      "minHeight": 2,
+      "minWidth": 2,
+      "segmentsInput": [
+        {
+          "color": "#3182bd",
+          "formula": {
+            "text": "0"
+          }
+        },
+        {
+          "color": "#76d1bb",
+          "formula": {
+            "text": "500"
+          }
+        },
+        {
+          "color": "#ffd062",
+          "formula": {
+            "text": "1000"
+          }
+        },
+        {
+          "color": "#ff8884",
+          "formula": {
+            "text": "1500"
+          }
+        }
+      ],
+      "segmentsResult": [
+        {
+          "color": "#3182bd",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#3182bd",
+            "formula": {
+              "text": "0"
+            }
+          },
+          "value": 0
+        },
+        {
+          "color": "#76d1bb",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#76d1bb",
+            "formula": {
+              "text": "500"
+            }
+          },
+          "value": 500
+        },
+        {
+          "color": "#ffd062",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#ffd062",
+            "formula": {
+              "text": "1000"
+            }
+          },
+          "value": 1000
+        },
+        {
+          "color": "#ff8884",
+          "openPopup": false,
+          "relatedFormula": {
+            "color": "#ff8884",
+            "formula": {
+              "text": "1500"
+            }
+          },
+          "value": 1500
+        }
+      ],
+      "selection": [],
+      "settings": {
+        "fixedFontSize": 24,
+        "fixedTextSize": true,
+        "maxValue": 1500,
+        "minValue": 0,
+        "singleColor": "#14A9D5",
+        "singleColorEnabled": true,
+        "subtitle": "Invoice Value:",
+        "subtitlePosition": "left",
+        "viewType": "number"
+      },
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "alignment": "center",
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontColor": "",
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "single-kpi",
+      "vertical": false,
+      "width": 15,
+      "x": 60,
+      "y": 1,
+      "zIndex": 13
+    },
+    {
+      "allowDataLink": false,
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "hasHoverbuttons": false,
+      "height": 2,
+      "id": "9400621d-85f8-44d8-9db1-e658b658e59c",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "logo-component",
+      "vertical": false,
+      "width": 11,
+      "x": 88,
+      "y": 1,
+      "zIndex": 13
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "transparent",
+        "opacity": 1
+      },
+      "diagramBorder": false,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e4e4e4",
+        "lineOpacity": 1,
+        "lineWidth": 3,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "#{Purchase Order Volume}",
+          "text": "COUNT_TABLE(\"EKPO\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "Purchase Order Volume",
+          "units": "",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 3,
+      "id": "e4c5bfa7-0fc5-4b2a-aa05-7d57e82b057d",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[left][color=#000000][size=30][font=\"proxima_nova\"]Accounts Receivable #{Analysis}[/font][/size][/color][/left]",
+      "title": "",
+      "toolBorder": false,
+      "type": "text",
+      "width": 29,
+      "x": 2,
+      "y": 1,
+      "zIndex": 13
+    },
+    {
+      "axis0": [
+        {
+          "meta": {
+            "columnName": "#{WRBTR}",
+            "columnType": "string",
+            "expressionColumn": null,
+            "expressionLhs": "CASE WHEN PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) >= 0.0 AND PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) <= 100.0 THEN 'a) 0 - 100\u20ac' WHEN PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) > 100.0 AND PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) <= 1000.0 THEN 'b) 100 - 1.000\u20ac' WHEN PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) > 1000.0 AND PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) <= 5000.0 THEN 'c) 1.000 - 5.000\u20ac' WHEN PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) > 5000.0 AND PU_SUM ( \"BKPF\" , \"BSEG\".\"WRBTR\" ) <= 10000.0 THEN 'd) 5.000 - 10.000\u20ac' ELSE 'e) > 10.000\u20ac' END AS \"#{WRBTR}\"",
+            "filterLhs": null,
+            "format": "",
+            "hidden": null
+          },
+          "name": "#{WRBTR}",
+          "text": "CASE WHEN PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") >= 0.0 AND PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") <= 100.0 THEN 'a) 0 - 100\u20ac'\n    WHEN PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") > 100.0 AND PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") <= 1000.0 THEN 'b) 100 - 1.000\u20ac'\n    WHEN PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") > 1000.0 AND PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") <= 5000.0 THEN 'c) 1.000 - 5.000\u20ac'\n    WHEN PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") > 5000.0 AND PU_SUM(\"BKPF\",\"BSEG\".\"WRBTR\") <= 10000.0 THEN 'd) 5.000 - 10.000\u20ac'\n    ELSE 'e) > 10.000\u20ac' END",
+          "translatedName": "WRBTR",
+          "type": "dimension",
+          "units": "",
+          "valueFormat": ""
+        }
+      ],
+      "axis0Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {
+          "lineOpacity": 1
+        },
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "gapWidth": 0.1,
+        "gridlineStyle": {
+          "lineOpacity": 1
+        },
+        "seriesOverlap": 0.45,
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "axis1": [],
+      "axis1Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {
+          "lineOpacity": 0.5
+        },
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {
+          "lineColor": "#DEDEDE",
+          "lineOpacity": 1
+        },
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showGridlines": true,
+        "showTickLines": true
+      },
+      "axis2": [
+        {
+          "dataLabelStyle": {},
+          "dataLabelsPosition": "custom",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "ignoreSeriesPalettes": false,
+          "legendMarkerColor": "#dddddd",
+          "meta": {
+            "columnName": "Case count",
+            "columnType": "int",
+            "expressionColumn": null,
+            "expressionLhs": null,
+            "filterLhs": null,
+            "format": ",f",
+            "hidden": null
+          },
+          "name": "Case count",
+          "ratioFormula": {},
+          "secondaryAxis": false,
+          "seriesColor": "#dddddd",
+          "seriesColorMapping": "",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "styles": {
+            "left": "0px",
+            "position": "absolute",
+            "right": "4px",
+            "top": "0px"
+          },
+          "text": "COUNT_TABLE(\"BSEG\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "Case count",
+          "units": "",
+          "valueFormat": ",f"
+        }
+      ],
+      "axis2Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {},
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {},
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "chartType": "column",
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 0
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#777777",
+        "lineOpacity": 0.29,
+        "lineWidth": 1,
+        "opacityInDec": 29
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 23,
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "RIGHT",
+      "id": "0a932a0d-0655-4e2a-8485-7b42f3490b54",
+      "labelsCount": 3,
+      "legendFontStyle": {
+        "backgroundColor": "transparent",
+        "borderColor": "",
+        "fontColor": ""
+      },
+      "legendPosition": "bc",
+      "legendShow": false,
+      "limit": true,
+      "limitMode": "LIMIT",
+      "limitNumber": 5,
+      "maximized": false,
+      "noscrolling": true,
+      "scrollPageEntries": 30,
+      "scrolling": false,
+      "selection": [],
+      "seriesPalette": "",
+      "setCountLimit": true,
+      "showHeader": true,
+      "showOthers": false,
+      "showTitle": true,
+      "technicalNames": false,
+      "title": "Invoice Amount",
+      "titleStyle": {
+        "backgroundColor": "",
+        "bold": false,
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "medium 14px",
+          "value": 14
+        },
+        "fontColor": "",
+        "fontSize": 14
+      },
+      "toolBorder": false,
+      "tooltips": true,
+      "type": "pql-table",
+      "vertical": true,
+      "width": 14,
+      "x": 57,
+      "y": 26,
+      "zIndex": 13
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "buttonTitle": "<%= ButtonDrilldown1== '\"LFA1\".\"NAME1\"'  ? 'Customer': ButtonDrilldown1== '\"BSEG\".\"BUKRS\" || \\' - \\' || \"BSEG\".\"BUKRS_TEXT\"'  ? '#{\"BSEG\".\"BUKRS\"}': ButtonDrilldown1== '\"BKPF\".\"BLART\"'  ? '#{\"BKPF\".\"BLART\"}': ''%>",
+      "buttons": [
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "#{customer}",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "ButtonDrilldown1",
+          "variableValue": "\"LFA1\".\"NAME1\""
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "#{\"BSEG\".\"BUKRS\"}",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "ButtonDrilldown1",
+          "variableValue": "\"BSEG\".\"BUKRS\" || ' - ' || \"BSEG\".\"BUKRS_TEXT\""
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "#{\"BKPF\".\"BLART\"}",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "ButtonDrilldown1",
+          "variableValue": "\"BKPF\".\"BLART\""
+        }
+      ],
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 0
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "c840a66f-6431-48f5-9988-3059d6f3d809",
+      "inputType": "Manual Input",
+      "loadEntries": {
+        "formula": {
+          "text": ""
+        },
+        "isMultiSelect": true,
+        "preview": "Value1 Value2"
+      },
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "toolBorder": false,
+      "type": "button_dropdown",
+      "width": 12,
+      "x": 87,
+      "y": 26,
+      "zIndex": 13
+    },
+    {
+      "allowDataLink": false,
+      "axis0": [
+        {
+          "meta": {
+            "columnName": "Creation Date",
+            "columnType": "date",
+            "expressionColumn": null,
+            "expressionLhs": "ROUND_MONTH ( \"BKPF\".\"CPUDT\" ) AS \"Creation Date\" FORMAT \"%Y-%m\"",
+            "filterLhs": null,
+            "format": "%Y-%m",
+            "hidden": null
+          },
+          "name": "Creation Date",
+          "sorting": "ASC",
+          "sortingIndex": 0,
+          "text": "ROUND_MONTH(\"BKPF\".\"CPUDT\")",
+          "translatedName": "Creation Date",
+          "type": "dimension",
+          "units": "",
+          "valueFormat": "%Y-%m"
+        }
+      ],
+      "axis0Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "currentFontSize": {
+            "name": "x-small 11px",
+            "value": 11
+          },
+          "fontColor": "",
+          "fontSize": 11
+        },
+        "axisLineStyle": {
+          "lineOpacity": 1
+        },
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "currentFontSize": {
+            "name": "small 13px",
+            "value": 13
+          },
+          "fontColor": "",
+          "fontSize": 13
+        },
+        "gapWidth": 0.45,
+        "gridlineStyle": {
+          "lineOpacity": 1
+        },
+        "seriesOverlap": 0.45,
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "axis1": [],
+      "axis1Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "currentFontSize": {
+            "name": "x-small 11px",
+            "value": 11
+          },
+          "fontColor": "",
+          "fontSize": 11
+        },
+        "axisLineStyle": {
+          "lineOpacity": 1
+        },
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "currentFontSize": {
+            "name": "small 13px",
+            "value": 13
+          },
+          "fontColor": "",
+          "fontSize": 13
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {
+          "lineColor": "#e4e4e4",
+          "lineOpacity": 1,
+          "lineWidth": 1
+        },
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showGridlines": true,
+        "showTickLines": true
+      },
+      "axis2": [
+        {
+          "alternativeType": "column",
+          "dataLabelStyle": {},
+          "dataLabelsPosition": "custom",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "ignoreSeriesPalettes": false,
+          "legendMarkerColor": "#dddddd",
+          "meta": {
+            "columnName": "# Invoices",
+            "columnType": "int",
+            "expressionColumn": null,
+            "expressionLhs": null,
+            "filterLhs": null,
+            "format": ",f",
+            "hidden": null
+          },
+          "name": "# Invoices",
+          "ratioFormula": {},
+          "secondaryAxis": true,
+          "seriesColor": "#dddddd",
+          "seriesColorMapping": "",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "text": "COUNT_TABLE(\"BSEG\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "New Expression",
+          "units": "",
+          "valueFormat": ",f"
+        },
+        {
+          "alternativeType": "line",
+          "dataLabelStyle": {},
+          "dataLabelsPosition": "custom",
+          "fillStyle": {
+            "opacity": 1
+          },
+          "ignoreSeriesPalettes": false,
+          "legendMarkerColor": "#14A9D5",
+          "lineStyle": {
+            "color": "#6FA7D1",
+            "lineOpacity": 1,
+            "lineWidth": 1,
+            "opacityInDec": 100
+          },
+          "meta": {
+            "columnName": "Net Value [\u20ac]",
+            "columnType": "float",
+            "expressionColumn": null,
+            "expressionLhs": null,
+            "filterLhs": null,
+            "format": "",
+            "hidden": null
+          },
+          "name": "Net Value [\u20ac]",
+          "ratioFormula": {},
+          "secondaryAxis": false,
+          "seriesColor": "#14A9D5",
+          "seriesColorMapping": "",
+          "seriesPalette": "",
+          "showDataLabels": false,
+          "spline": true,
+          "text": "SUM(\"BSEG\".\"WRBTR\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "Net Value [\u20ac]",
+          "units": "",
+          "valueFormat": ""
+        }
+      ],
+      "axis2Config": {
+        "autoTickCount": true,
+        "axisLabelStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "fontColor": ""
+        },
+        "axisLineStyle": {},
+        "axisTitleStyle": {
+          "backgroundColor": "",
+          "borderColor": "",
+          "currentFontSize": {
+            "name": "small 13px",
+            "value": 13
+          },
+          "fontColor": "",
+          "fontSize": 13
+        },
+        "boundsMode": "AUTO",
+        "gridlineStyle": {},
+        "showAxis": true,
+        "showAxisLabels": true,
+        "showTickLines": true
+      },
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "chartType": "column",
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "hasHoverbuttons": false,
+      "height": 20,
+      "hoverButtonFixed": false,
+      "hoverButtonPosition": "LEFT",
+      "id": "841fc39b-b125-454e-987d-760f62e6859d",
+      "legendFontStyle": {
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "x-small 11px",
+          "value": 11
+        },
+        "fontColor": "",
+        "fontSize": 11
+      },
+      "legendOverlay": false,
+      "legendPosition": "bc",
+      "legendShow": true,
+      "limitMode": "SCROLL",
+      "limitNumber": 20,
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "showOthers": false,
+      "showTitle": true,
+      "technicalNames": false,
+      "textStyle": {
+        "currentFontSize": {
+          "name": "medium 14px",
+          "value": 14
+        },
+        "fontSize": 14
+      },
+      "title": "Trend - # Invoices over time",
+      "titleStyle": {
+        "backgroundColor": "",
+        "borderColor": "",
+        "currentFontSize": {
+          "name": "medium 14px",
+          "value": 14
+        },
+        "fontColor": "",
+        "fontSize": 14
+      },
+      "toolBorder": false,
+      "tooltips": true,
+      "type": "pql-table",
+      "vertical": false,
+      "width": 42,
+      "x": 57,
+      "y": 5,
+      "zIndex": 13
+    }
+  ],
+  "format": "FULLSCREEN",
+  "id": "06fc2b70-1cb3-4225-8ebc-8e20e2a05c18",
+  "lines": [
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "color": "#dddddd",
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 0
+      },
+      "directionType": "horizontal",
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 1,
+      "id": "262687e5-8543-4ffd-9bf4-40964dee4334",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "stroke": "solid",
+      "thickness": 2,
+      "title": "",
+      "toolBorder": false,
+      "type": "line",
+      "width": 98,
+      "x": 1,
+      "y": 4,
+      "zIndex": 1
+    }
+  ],
+  "name": "Analysis",
+  "position": {
+    "height": 804,
+    "left": 0,
+    "top": 0,
+    "width": 1200
+  },
+  "sheetFilter": {
+    "text": ""
+  }
+}
