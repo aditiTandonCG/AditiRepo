@@ -1,0 +1,76 @@
+[
+  {
+    "name": "date",
+    "type": "text_replacement",
+    "value": "today()"
+  },
+  {
+    "name": "Send_Date",
+    "type": "text_replacement",
+    "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Send Invoice')"
+  },
+  {
+    "name": "currency_symbol",
+    "type": "text_replacement",
+    "value": "\u20ac"
+  },
+  {
+    "name": "interest",
+    "type": "text_replacement",
+    "value": "3"
+  },
+  {
+    "name": "reduction_potential",
+    "type": "text_replacement",
+    "value": "1"
+  },
+  {
+    "name": "buffer",
+    "type": "text_replacement",
+    "value": "2"
+  },
+  {
+    "name": "Payment_Date",
+    "type": "text_replacement",
+    "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Invoice cleared')"
+  },
+  {
+    "name": "Due_Date",
+    "type": "text_replacement",
+    "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Due Date passed')"
+  },
+  {
+    "name": "reworkActivities",
+    "type": "text_replacement",
+    "value": "'Change Baseline Date', 'Change Conditions for Discount', 'Change Payment Method', 'Change Payment Term', 'Change Payment Days 1', 'Change Item Text', 'Remove Payment Block', 'Cancel Invoice Receipt', 'Remove Baseline Date', 'Remove Dunning Block', 'Set Dunning Block', 'Set Payment Block', 'Cancel Invoice'"
+  },
+  {
+    "name": "ButtonDrilldown1",
+    "type": "text_replacement",
+    "value": "\"BSEG\".\"BUKRS\" || ' - ' || \"BSEG\".\"BUKRS_TEXT\""
+  },
+  {
+    "linkedEntries": [
+      {
+        "formattedValue": "IDES France",
+        "selected": true,
+        "value": "IDES France"
+      }
+    ],
+    "name": "CC1",
+    "type": "text_replacement",
+    "value": "'IDES France'"
+  },
+  {
+    "linkedEntries": [
+      {
+        "formattedValue": "IDES Retail GmbH",
+        "selected": true,
+        "value": "IDES Retail GmbH"
+      }
+    ],
+    "name": "CC2",
+    "type": "text_replacement",
+    "value": "'IDES Retail GmbH'"
+  }
+]
