@@ -1,0 +1,2088 @@
+{
+  "components": [
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "transparent",
+        "opacity": 1
+      },
+      "diagramBorder": false,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e4e4e4",
+        "lineOpacity": 1,
+        "lineWidth": 3,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "#{Purchase Order Volume}",
+          "text": "COUNT_TABLE(\"EKPO\")",
+          "textColor": "",
+          "textColorMapping": "",
+          "translatedName": "Purchase Order Volume",
+          "units": "",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 4,
+      "id": "d9d00006-4419-4e70-be02-f6c43c9acaeb",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[left][color=#000000][size=44][font=\"proxima_nova\"]Accounts Receivable Business Calculator[/font][/size][/color][/left]",
+      "title": "",
+      "toolBorder": false,
+      "type": "text",
+      "width": 52,
+      "x": 2,
+      "y": 1,
+      "zIndex": 7
+    },
+    {
+      "allowDataLink": false,
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "hasHoverbuttons": false,
+      "height": 4,
+      "id": "c8e5311c-4333-4b9f-a2c8-c87d7c9305d4",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "logo-component",
+      "vertical": false,
+      "width": 16,
+      "x": 82,
+      "y": 0,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#14A9D5",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "c33fb456-ae3d-423a-9bfd-2e67ebd6b658",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=19]  Analysis:[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 13,
+      "x": 2,
+      "y": 5,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "13e17765-4f4f-4a98-817f-2e281a5df741",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]What is the effect of reducing Days Sales Outstanding?[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 82,
+      "x": 16,
+      "y": 5,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#14A9D5",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "148d5aa3-914f-47d2-8aec-0c2240333681",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=19]  Benefit:[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 13,
+      "x": 2,
+      "y": 8,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "734310fb-2975-4979-bc2a-1ff8be9c446d",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]By reducing Days Sales Outstanding the cash flow is improved while saving costs for taking out a loan.[/size]\r",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 82,
+      "x": 16,
+      "y": 8,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#14A9D5",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "a7952140-b2a2-49de-a236-953f33905e9f",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=21]  Assumptions:[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 12,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#14A9D5",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "5996e782-ae91-4ab5-a65a-7a733ed5bd3f",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=21]  Calculation:[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 20,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#14A9D5",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "c43d0b3f-d8c5-4c5b-97fd-4386147aeed2",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 22,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#14A9D5",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "8b0979f0-3df0-490f-bd33-94ed31e3a123",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=21]  Anaysis Results:[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 25,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#14A9D5",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 7,
+      "id": "f16255ee-8906-4a14-8c3f-e20e034a77b1",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 27,
+      "zIndex": 1
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#78B604",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#78B604",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "savings",
+          "text": "SUM(\"BSEG\".\"WRBTR\") * <%= reduction_potential %> * <%=interest%> /365",
+          "textColorMapping": "",
+          "translatedName": "savings",
+          "units": "<%= currency_symbol %>",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "74d0e794-e83f-4123-af9e-f9fd69210dcf",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[right][color=#ffffff][b][size=21]${savings}[/size][/b][/color][/right]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 32,
+      "x": 59,
+      "y": 34,
+      "zIndex": 10
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "#ffffff",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#14A9D5",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 3,
+      "id": "e18a08ab-3932-4a15-91c1-580a5816bd07",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=19][color=#000000][b]Savings Potential[/b][/color][/size][size=19][color=#000000] =\n[/color][/size][color=#000000][size=17]affected invoice volume * DSO reduction * loan interest rate / 365 days[/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 69,
+      "x": 21,
+      "y": 22,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "Affected Invoice Volume",
+          "text": "SUM(\n\nCASE\n    WHEN\n    CALC_THROUGHPUT( LAST_OCCURRENCE [ 'Create Delivery' ] TO FIRST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) > <%= D2I_TARGET %>\n    AND\n    CALC_THROUGHPUT( LAST_OCCURRENCE [ 'Create Delivery' ] TO FIRST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) < <%= D2I_MAX %>\n    THEN \n    \"VBAP\".\"NETWR_CONVERTED\"\n    ELSE NULL\nEND\n)",
+          "textColorMapping": "",
+          "translatedName": "Affected Invoice Volume",
+          "units": " EUR",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "6da17e7d-cbef-42ea-bdd2-e5073572541a",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]Average DSO:[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 35,
+      "x": 21,
+      "y": 28,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "41896f1c-cfd7-42da-9681-c5731b77f80d",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]DSO reduction:[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 30,
+      "x": 21,
+      "y": 17,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "b78439f2-54d7-46b2-8725-bdecafc05a71",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]Loan interest rate:[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 28,
+      "x": 21,
+      "y": 15,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "dropdownSettings": {
+        "formula": {
+          "seriesColor": "",
+          "text": "\"BKPF\".\"BLART\"",
+          "textColor": "",
+          "units": " "
+        },
+        "isMultiSelect": true,
+        "variables": [
+          {
+            "name": "savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> > <%= bufferdays2 %> THEN 1.0 ELSE 0.0 END)*7/365<%= default_interest %>*<%= rp_late %>+SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> < -1*<%= bufferdays1 %> THEN 1.0 ELSE 0.0 END)*7/365*<%= RoIC %>*<%= rp_early %>"
+          },
+          {
+            "name": "late_savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> > <%= bufferdays2 %> THEN 1.0 ELSE 0.0 END)*7/365<%= default_interest %>*<%= rp_late %>"
+          },
+          {
+            "name": "early_savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> < -1*<%= bufferdays1 %> THEN 1.0 ELSE 0.0 END)*7/365*<%= RoIC %>*<%= rp_early %>"
+          },
+          {
+            "name": "default_interest",
+            "type": "text_replacement",
+            "value": "10"
+          },
+          {
+            "name": "rp_late",
+            "type": "text_replacement",
+            "value": "15"
+          },
+          {
+            "name": "rp_early",
+            "type": "text_replacement",
+            "value": "30"
+          },
+          {
+            "name": "RoIC",
+            "type": "text_replacement",
+            "value": "15"
+          },
+          {
+            "name": "bufferdays2",
+            "type": "text_replacement",
+            "value": "3"
+          },
+          {
+            "name": "bufferdays1",
+            "type": "text_replacement",
+            "value": "3"
+          },
+          {
+            "name": "Due_after",
+            "type": "text_replacement",
+            "value": "DAYS_BETWEEN(CASE WHEN ISNULL(\"BSEG\".\"ZBD1T\") = 1 THEN \"BSEG\".\"ZFBDT\" ELSE ADD_DAYS(\"BSEG\".\"ZFBDT\",\"BSEG\".\"ZBD1T_INT\") END, PU_FIRST(\"BSEG\", \"_CEL_AP_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AP_ACTIVITIES\".\"ACTIVITY_EN\" = 'Due Date passed'))"
+          },
+          {
+            "name": "Payment_after",
+            "type": "text_replacement",
+            "value": "DATEDIFF(dd,\"BSEG\".\"ZFBDT\",PU_FIRST(\"BSEG\", \"_CEL_AP_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AP_ACTIVITIES\".\"ACTIVITY_EN\" = 'Pay Invoice'))"
+          },
+          {
+            "name": "reworkActivities",
+            "type": "text_replacement",
+            "value": "'Change Baseline Date', 'Change Conditions for Discount', 'Change Payment Method', 'Change Payment Term', 'Change Payment Days 1', 'Change Item Text', 'Remove Payment Block', 'Cancel Invoice Receipt', 'Remove Baseline Date', 'Remove Dunning Block', 'Set Dunning Block', 'Set Payment Block'"
+          },
+          {
+            "name": "ButtonDrilldown1",
+            "type": "text_replacement",
+            "value": "\"LFA1\".\"NAME1\""
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES AG",
+                "selected": true,
+                "value": "IDES AG"
+              }
+            ],
+            "name": "CC1",
+            "type": "text_replacement",
+            "value": "'IDES AG'"
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES France",
+                "selected": true,
+                "value": "IDES France"
+              }
+            ],
+            "name": "CC2",
+            "type": "text_replacement",
+            "value": "'IDES France'"
+          }
+        ]
+      },
+      "dropdownText": "#{Document Type}",
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "eebb43cc-dcec-4b81-bca5-bb96e117b324",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "backgroundColor": "",
+        "borderColor": "",
+        "fontColor": ""
+      },
+      "toolBorder": false,
+      "type": "dropdown",
+      "width": 11,
+      "x": 3,
+      "y": 17,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "dropdownSettings": {
+        "formula": {
+          "text": "BSEG.BUKRS ||' - '|| BSEG.BUKRS_TEXT",
+          "units": " "
+        },
+        "isMultiSelect": true,
+        "variables": [
+          {
+            "name": "savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> > <%= bufferdays2 %> THEN 1.0 ELSE 0.0 END)*7/365<%= default_interest %>*<%= rp_late %>+SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> < -1*<%= bufferdays1 %> THEN 1.0 ELSE 0.0 END)*7/365*<%= RoIC %>*<%= rp_early %>"
+          },
+          {
+            "name": "late_savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> > <%= bufferdays2 %> THEN 1.0 ELSE 0.0 END)*7/365<%= default_interest %>*<%= rp_late %>"
+          },
+          {
+            "name": "early_savings",
+            "type": "text_replacement",
+            "value": "SUM(\"BSEG\".\"WRBTR\")*AVG(CASE WHEN <%=Payment_after%> - <%=Due_after%> < -1*<%= bufferdays1 %> THEN 1.0 ELSE 0.0 END)*7/365*<%= RoIC %>*<%= rp_early %>"
+          },
+          {
+            "name": "default_interest",
+            "type": "text_replacement",
+            "value": "10"
+          },
+          {
+            "name": "rp_late",
+            "type": "text_replacement",
+            "value": "15"
+          },
+          {
+            "name": "rp_early",
+            "type": "text_replacement",
+            "value": "30"
+          },
+          {
+            "name": "RoIC",
+            "type": "text_replacement",
+            "value": "15"
+          },
+          {
+            "name": "bufferdays2",
+            "type": "text_replacement",
+            "value": "3"
+          },
+          {
+            "name": "bufferdays1",
+            "type": "text_replacement",
+            "value": "3"
+          },
+          {
+            "name": "Due_after",
+            "type": "text_replacement",
+            "value": "DAYS_BETWEEN(CASE WHEN ISNULL(\"BSEG\".\"ZBD1T\") = 1 THEN \"BSEG\".\"ZFBDT\" ELSE ADD_DAYS(\"BSEG\".\"ZFBDT\",\"BSEG\".\"ZBD1T_INT\") END, PU_FIRST(\"BSEG\", \"_CEL_AP_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AP_ACTIVITIES\".\"ACTIVITY_EN\" = 'Due Date passed'))"
+          },
+          {
+            "name": "Payment_after",
+            "type": "text_replacement",
+            "value": "DATEDIFF(dd,\"BSEG\".\"ZFBDT\",PU_FIRST(\"BSEG\", \"_CEL_AP_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AP_ACTIVITIES\".\"ACTIVITY_EN\" = 'Pay Invoice'))"
+          },
+          {
+            "name": "reworkActivities",
+            "type": "text_replacement",
+            "value": "'Change Baseline Date', 'Change Conditions for Discount', 'Change Payment Method', 'Change Payment Term', 'Change Payment Days 1', 'Change Item Text', 'Remove Payment Block', 'Cancel Invoice Receipt', 'Remove Baseline Date', 'Remove Dunning Block', 'Set Dunning Block', 'Set Payment Block'"
+          },
+          {
+            "name": "ButtonDrilldown1",
+            "type": "text_replacement",
+            "value": "\"LFA1\".\"NAME1\""
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES AG",
+                "selected": true,
+                "value": "IDES AG"
+              }
+            ],
+            "name": "CC1",
+            "type": "text_replacement",
+            "value": "'IDES AG'"
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES France",
+                "selected": true,
+                "value": "IDES France"
+              }
+            ],
+            "name": "CC2",
+            "type": "text_replacement",
+            "value": "'IDES France'"
+          }
+        ]
+      },
+      "dropdownText": "Company Code",
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "c8d26a66-ffaa-448c-b77c-45bd8064168a",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "dropdown",
+      "vertical": false,
+      "width": 11,
+      "x": 3,
+      "y": 15,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "dropdownSettings": {
+        "formula": {
+          "text": "\"LFA1\".\"LIFNR\" || ' - ' || \"LFA1\".\"NAME1\"",
+          "units": ""
+        },
+        "isMultiSelect": true,
+        "variables": [
+          {
+            "name": "date",
+            "type": "text_replacement",
+            "value": "today()"
+          },
+          {
+            "name": "Send_Date",
+            "type": "text_replacement",
+            "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Send Invoice')"
+          },
+          {
+            "name": "currency_symbol",
+            "type": "text_replacement",
+            "value": "\u20ac"
+          },
+          {
+            "name": "interest",
+            "type": "text_replacement",
+            "value": "3"
+          },
+          {
+            "name": "reduction_potential",
+            "type": "text_replacement",
+            "value": "1"
+          },
+          {
+            "name": "buffer",
+            "type": "text_replacement",
+            "value": "2"
+          },
+          {
+            "name": "Payment_Date",
+            "type": "text_replacement",
+            "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Invoice cleared')"
+          },
+          {
+            "name": "Due_Date",
+            "type": "text_replacement",
+            "value": "PU_FIRST(\"BSEG\", \"_CEL_AR_ACTIVITIES\".\"EVENTTIME\", \"_CEL_AR_ACTIVITIES\".\"ACTIVITY_EN\" = 'Due Date passed')"
+          },
+          {
+            "name": "reworkActivities",
+            "type": "text_replacement",
+            "value": "'Change Baseline Date', 'Change Conditions for Discount', 'Change Payment Method', 'Change Payment Term', 'Change Payment Days 1', 'Change Item Text', 'Remove Payment Block', 'Cancel Invoice Receipt', 'Remove Baseline Date', 'Remove Dunning Block', 'Set Dunning Block', 'Set Payment Block', 'Cancel Invoice'"
+          },
+          {
+            "name": "ButtonDrilldown1",
+            "type": "text_replacement",
+            "value": "\"BSEG\".\"BUKRS\" || ' - ' || \"BSEG\".\"BUKRS_TEXT\""
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES France",
+                "selected": true,
+                "value": "IDES France"
+              }
+            ],
+            "name": "CC1",
+            "type": "text_replacement",
+            "value": "'IDES France'"
+          },
+          {
+            "linkedEntries": [
+              {
+                "formattedValue": "IDES Retail GmbH",
+                "selected": true,
+                "value": "IDES Retail GmbH"
+              }
+            ],
+            "name": "CC2",
+            "type": "text_replacement",
+            "value": "'IDES Retail GmbH'"
+          }
+        ]
+      },
+      "dropdownText": "Customer",
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "54bdb91e-859b-4a55-87b3-4b86a3cd2b07",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "dropdown",
+      "vertical": false,
+      "width": 11,
+      "x": 3,
+      "y": 19,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "Median Throughput Time",
+          "text": "Median(CALC_THROUGHPUT( FIRST_OCCURRENCE [ 'Create Delivery' ] TO LAST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) )",
+          "textColorMapping": "",
+          "translatedName": "Median Throughput Time",
+          "units": " days",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "cc3db5b7-1f96-4737-90d7-7d97fa220357",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]Affected Volume:[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 33,
+      "x": 21,
+      "y": 32,
+      "zIndex": 8
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#14A9D5",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 5,
+      "id": "e1c20b5a-5410-4011-b166-3420abfa59b7",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 14,
+      "zIndex": 5
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "#ffffff",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "AVG_DSO",
+          "text": "AVG(KPI(\"DSO\"))",
+          "textColorMapping": "",
+          "translatedName": "New Expression",
+          "units": "",
+          "valueFormat": ""
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "11c73e80-fada-4ae0-9887-86ba7974c5ad",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[right][b][size=17]${AVG_DSO} days\n[/size][/b][/right]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 44,
+      "x": 47,
+      "y": 28,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "buttonTitle": "<%=interest%> %",
+      "buttons": [
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "1",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "1"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "3",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "3"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "5",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "5"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "10",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "10"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "15",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "15"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "20",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "20"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "25",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "interest",
+          "variableValue": "25"
+        }
+      ],
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "6f48d126-9274-4c96-a937-3a8adb852c08",
+      "inputType": "Manual Input",
+      "loadEntries": {
+        "formula": {
+          "text": ""
+        },
+        "isMultiSelect": true
+      },
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "button_dropdown",
+      "vertical": false,
+      "width": 20,
+      "x": 49,
+      "y": 15,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#78B604",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#78B604",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "Savings per Year",
+          "text": "1.0*<%= Time_Factor %>*(<%= D2I_POT %>/100.0)*SUM(\n\nCASE\n    WHEN\n    CALC_THROUGHPUT( LAST_OCCURRENCE [ 'Create Delivery' ] TO FIRST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) > <%= D2I_TARGET %>\n    AND\n    CALC_THROUGHPUT( LAST_OCCURRENCE [ 'Create Delivery' ] TO FIRST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) < <%= D2I_MAX %>\n    THEN \n    ((CALC_THROUGHPUT( LAST_OCCURRENCE [ 'Create Delivery' ] TO FIRST_OCCURRENCE [ 'Create Invoice' ], REMAP_TIMESTAMPS ( \"_CEL_O2C_ACTIVITIES\".\"EVENTTIME\",DAYS) ) - <%= D2I_TARGET %>)/365.0)*(<%= ROE %>/100.0)*\"VBAP\".\"NETWR_CONVERTED\"\n    ELSE NULL\nEND\n)\n",
+          "textColorMapping": "",
+          "translatedName": "Savings per Year",
+          "units": " EUR",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "0b81d64e-8e56-40f7-83ca-5f964dda699b",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[color=#ffffff][size=21][b]  Savings per Year:[/b][/size][/color]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 73,
+      "x": 20,
+      "y": 34,
+      "zIndex": 9
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#00A4DA",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 9,
+      "id": "6205c4f4-6229-4813-8f8f-d4cc669ac579",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[center][b][size=15]\nFurther selections:[/size][size=19]\n[/size][/b][/center]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 13,
+      "x": 2,
+      "y": 12,
+      "zIndex": 6
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "New Expression",
+          "text": "AVG(KPI(\"DSO\"))-<%= reduction_potential %>",
+          "textColorMapping": "",
+          "translatedName": "New Expression",
+          "units": "",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "e6ed1274-a2b4-4b9b-a523-86ecb01620fe",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[right][size=17][b]${New Expression} days[/b][/size][/right]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 28,
+      "x": 63,
+      "y": 30,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "#ffffff",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [
+        {
+          "name": "affected volume",
+          "text": "SUM(\"BSEG\".\"WRBTR\")",
+          "textColorMapping": "",
+          "translatedName": "affected volume",
+          "units": " \u20ac",
+          "valueFormat": ",f"
+        }
+      ],
+      "hasBackground": true,
+      "height": 2,
+      "id": "5597a74e-379b-40a4-9956-1a7f40ed667f",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[right][size=17][b]${affected volume}\n[/b][/size][/right]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 31,
+      "x": 60,
+      "y": 32,
+      "zIndex": 7
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "buttonTitle": "<%=reduction_potential%> days",
+      "buttons": [
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "1",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "1"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "2",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "2"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "3",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "3"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "5",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "5"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "6",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "6"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "7",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "7"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "8",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "8"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "9",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "9"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "10",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "10"
+        },
+        {
+          "action": "setVariable",
+          "backgroundColor": "",
+          "buttonTitle": "15",
+          "titleStyle": {
+            "fontColor": ""
+          },
+          "variableName": "reduction_potential",
+          "variableValue": "15"
+        }
+      ],
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 2,
+      "id": "3bd44ae6-2612-4e22-ad4c-a8263f848eda",
+      "inputType": "Manual Input",
+      "loadEntries": {
+        "formula": {
+          "text": ""
+        },
+        "isMultiSelect": true
+      },
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "button_dropdown",
+      "vertical": false,
+      "width": 20,
+      "x": 49,
+      "y": 17,
+      "zIndex": 10
+    },
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "componentFilter": "",
+      "contextMenuMethods": {
+        "componentFilter": true,
+        "copy": true,
+        "deletable": true,
+        "export": true,
+        "fullscreen": true,
+        "layers": true,
+        "settings": true
+      },
+      "diagramBackground": true,
+      "diagramBackgroundStyle": {
+        "fillColor": "#eeeeee",
+        "opacity": 1
+      },
+      "diagramBorder": true,
+      "diagramBorderStyle": {
+        "color": "#6FA7D1",
+        "lineColor": "#e9e9e9",
+        "lineOpacity": 1,
+        "lineWidth": 1,
+        "opacityInDec": 100
+      },
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "formulas": [],
+      "hasBackground": true,
+      "height": 2,
+      "id": "5ade2068-0e23-4fb1-96f5-b2e0d9420806",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "text": "[size=17]Improved DSO:[/size]",
+      "title": "",
+      "titleStyle": {
+        "currentFontSize": {
+          "name": "x-large 17px",
+          "value": 17
+        },
+        "fontSize": 17
+      },
+      "toolBorder": false,
+      "type": "text",
+      "vertical": false,
+      "width": 35,
+      "x": 21,
+      "y": 30,
+      "zIndex": 10
+    }
+  ],
+  "format": "A4_LANDSCAPE",
+  "id": "45f37587-b53d-44eb-b59f-680fb4ad8ddb",
+  "lines": [
+    {
+      "backgroundColor": "#ffffff",
+      "border": false,
+      "clickToFilter": true,
+      "color": "#dddddd",
+      "componentFilter": "",
+      "dataLabelsPositions": [
+        "top",
+        "middle",
+        "bottom",
+        "custom"
+      ],
+      "diagramBackground": false,
+      "diagramBackgroundStyle": {
+        "fillColor": "",
+        "opacity": 0
+      },
+      "directionType": "horizontal",
+      "feedbackMode": false,
+      "filteringSelf": true,
+      "hasBackground": true,
+      "height": 1,
+      "id": "31ada746-d330-4d79-90fb-399d3dd01b10",
+      "maximized": false,
+      "selection": [],
+      "showHeader": true,
+      "stroke": "solid",
+      "thickness": 2,
+      "title": "",
+      "toolBorder": false,
+      "type": "line",
+      "width": 98,
+      "x": 1,
+      "y": 4,
+      "zIndex": 1
+    }
+  ],
+  "name": "Business Case",
+  "position": {
+    "height": 972,
+    "left": 0,
+    "top": 0,
+    "width": 1375
+  },
+  "sheetFilter": {
+    "text": ""
+  }
+}
